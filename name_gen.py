@@ -1,14 +1,13 @@
 from random import randint
 
 def startup_words():
-	buzzadj = ['grass-roots', 'synergistic' , 'proactive','adhesive','cohesive','practical','robust','sustainabale','functional','transformative','dynamic','Social','Crowdsourced']
-	buzznouns = ['synergy', 'adhesion','cohesion','impact','globalization','Solutions','Administration','Management','Paradigms']
-	computer = ['cache','api','mainframe','firewall','server','cloud','RAM','online', 'Sentiment Analysis','Algorithm']
-	company = ['.com','enterprises','ltd','international','incorporated','consolidated', 'global']
-	x = randint(0,3)
-	y = randint(0,6)
-	z = randint(0,5)
-	output = [ buzzadj[y] + ' ' + company[x], buzzadj[z] + ' ' +  buzznouns[z], computer[x] + ' ' + company[y], buzzadj[x] + ' ' +  computer[y] + ' ' +  company[z], 'Advanced Virtual Lawnmowers']
-	return output[y]
+
+	buzzadj = ['Grass-roots', 'Synergistic' , 'Proactive','Adhesive','Cohesive','Practical','Robust','Sustainabale','Functional','Transformative','Dynamic','Social','Crowdsourced']
+	buzznouns = ['Synergy', 'Adhesion','Cohesion','Impact','Globalization','Solutions','Administration','Management','Paradigms']
+	computer = ['Cache','API','Mainframe','Firewall','Server','Cloud','RAM','Online', 'Sentiment Analysis','Algorithm']
+	company = ['.com','Enterprises','Ltd.','International','Incorporated','Consolidated', 'Global']
+	output = [ buzzadj[randint(0,len (buzzadj) -1)] + ' ' + company[randint(0,len (company) -1)], buzzadj[randint(0,len (buzzadj) -1)] + ' ' +  buzznouns[randint(0,len (buzznouns ) -1)], computer[randint(0,len (computer) -1)] + ' ' + company[randint(0,len (company) -1)], buzzadj[randint(0,len (buzzadj) -1)] + ' ' +  computer[randint(0,len (computer) -1)] + ' ' +  company[randint(0,len (company) -1)], 'Advanced Virtual Lawnmowers']
+	return output[randint(0,len (output) -1)]
+
 
 print startup_words()
