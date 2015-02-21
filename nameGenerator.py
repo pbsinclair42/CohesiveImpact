@@ -1,7 +1,7 @@
 from random import randint
 
 def wordGenerator():
-	return randomConsonant(0)+randomVowel()+randomConsonant(1)+randomVowel()+randomConsonant(2)
+	return randomConsonant(0)+randomVowel()+randomConsonant(1)+(randomVowel()+randomConsonant(1) if (randint(0,1)==0) else "")+randomVowel()+randomConsonant(2)
 	
 	
 def randomVowel():
