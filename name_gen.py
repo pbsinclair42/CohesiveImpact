@@ -13,14 +13,3 @@ def startup_words():
 	if toReturn[-4:-3]=='.':
 		toReturn=toReturn.replace(" ","")
 	return toReturn
-
-print startup_words()
-print startup_words()
-print startup_words()
-print startup_words()
-print startup_words()
-print startup_words()
-print startup_words()
-print startup_words()
-print startup_words()
-print startup_words()

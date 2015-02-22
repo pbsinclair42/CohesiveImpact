@@ -28,8 +28,3 @@ def randomConsonant(position):
 			if (x<=0):
 				if (a[position+2]):
 					return a[0]
-
-
-
-
-print wordGenerator()
